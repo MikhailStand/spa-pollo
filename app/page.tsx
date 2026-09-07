@@ -12,25 +12,21 @@ const bookingUrl =
 
 const services = [
   {
-    number: '01',
     title: 'SPA',
     text: 'Авторские ритуалы, хаммам, гидромассажная ванна и уходы за телом.',
     tags: ['Ритуалы', 'Бальнеотерапия', 'Хаммам'],
   },
   {
-    number: '02',
     title: 'Лицо',
     text: 'Медицинская, эстетическая и аппаратная косметология с деликатным подходом.',
     tags: ['Косметология', 'Уходы', 'Массаж лица'],
   },
   {
-    number: '03',
     title: 'Тело',
     text: 'Ручные и аппаратные техники для лёгкости, тонуса и глубокого расслабления.',
     tags: ['Массаж', 'Биостимуляция', 'Эпиляция'],
   },
   {
-    number: '04',
     title: 'Красота',
     text: 'Волосы, ногти, брови и макияж — всё для законченного образа в одном месте.',
     tags: ['Волосы', 'Маникюр', 'Brow bar'],
@@ -186,9 +182,8 @@ export default function Home() {
               href={bookingUrl}
               target="_blank"
               rel="noreferrer"
-              key={service.number}
+              key={service.title}
             >
-              <span className="service-number">{service.number}</span>
               <div className="service-title">
                 <h3>{service.title}</h3>
                 <div className="service-tags">
@@ -232,9 +227,8 @@ export default function Home() {
           <p>Готовые сочетания процедур для быстрого и глубокого восстановления.</p>
         </div>
         <div className="offers-grid">
-          {offers.map((offer, index) => (
+          {offers.map((offer) => (
             <article className="offer-card" key={offer.title}>
-              <span className="offer-index">0{index + 1}</span>
               <Sparkles className="offer-icon" aria-hidden="true" strokeWidth={1.3} />
               <h3>{offer.title}</h3>
               <p>{offer.description}</p>
