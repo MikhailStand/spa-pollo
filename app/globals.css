@@ -129,6 +129,8 @@ a:focus-visible, button:focus-visible {
 }
 .header-book:hover { background: #ddff78; }
 
+.mobile-menu-toggle, .mobile-menu-panel { display: none; }
+
 .hero {
   position: relative;
   display: grid;
@@ -646,7 +648,43 @@ footer {
   .site-header { min-height: 76px; padding: 0 20px; }
   .logo-mark { width: 36px; height: 36px; font-size: 22px; }
   .logo-text strong { font-size: 13px; }
-  .header-book { min-height: 46px; padding: 0 18px; font-size: 13px; }
+  .header-book { display: none; }
+  .mobile-menu-toggle {
+    z-index: 42;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    justify-self: end;
+    padding: 0;
+    border: 1px solid rgba(207, 255, 69, 0.48);
+    border-radius: 50%;
+    background: var(--acid);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .mobile-menu-panel {
+    position: fixed;
+    z-index: 40;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 118px 20px 32px;
+    background: rgba(17, 23, 14, 0.98);
+    backdrop-filter: blur(18px);
+  }
+  .mobile-menu-panel nav { display: flex; flex-direction: column; }
+  .mobile-menu-panel nav a {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line-dark);
+    font-family: var(--font-serif);
+    font-size: clamp(36px, 11vw, 52px);
+    line-height: 1.05;
+  }
+  .mobile-menu-panel nav a:first-child { border-top: 1px solid var(--line-dark); }
+  .mobile-menu-panel nav a:active { color: var(--acid); }
+  .mobile-menu-book { width: 100%; }
   .hero { display: flex; min-height: auto; flex-direction: column; padding: 130px 20px 72px; }
   .hero-copy { padding: 0; }
   .hero h1 { font-size: clamp(52px, 15vw, 78px); }
@@ -665,6 +703,9 @@ footer {
   .facts strong { font-size: clamp(28px, 8vw, 38px); }
   .service-row { grid-template-columns: 1fr 50px; gap: 15px; min-height: 175px; }
   .service-title h3 { font-size: 48px; }
+  .service-tags { flex-wrap: nowrap; gap: 5px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .service-tags::-webkit-scrollbar { display: none; }
+  .service-tags span { flex: 0 0 auto; padding: 5px 8px; font-size: 12px; }
   .service-row > p { grid-column: 1 / -1; }
   .service-arrow { width: 48px; height: 48px; }
   .service-row:hover { padding-right: 0; padding-left: 0; background: transparent; }

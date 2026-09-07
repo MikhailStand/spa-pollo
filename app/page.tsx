@@ -6,6 +6,7 @@ import {
   Phone,
   Sparkles,
 } from 'lucide-react';
+import { MobileMenu } from '@/components/mobile-menu';
 
 const bookingUrl =
   'https://widget.sonline.su/ru/services/1192266/?placeid=5531';
@@ -87,6 +88,8 @@ export default function Home() {
           Записаться
           <ArrowUpRight aria-hidden="true" size={16} />
         </a>
+
+        <MobileMenu bookingUrl={bookingUrl} />
       </header>
 
       <section className="hero" id="top">
