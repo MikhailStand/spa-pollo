@@ -344,25 +344,50 @@ a:focus-visible, button:focus-visible {
 .facts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: clamp(80px, 10vw, 145px);
-  border-top: 1px solid var(--line-dark);
+  gap: 1px;
+  margin-top: clamp(64px, 8vw, 110px);
+  padding: 1px;
+  border: 1px solid rgba(207, 255, 69, 0.22);
+  border-radius: 18px;
+  background: rgba(207, 255, 69, 0.18);
+  overflow: hidden;
 }
 .facts div {
+  position: relative;
   display: flex;
-  min-height: 120px;
+  min-height: 184px;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 26px 20px 0 0;
-  border-right: 1px solid var(--line-dark);
+  align-items: center;
+  justify-content: center;
+  padding: 34px 24px;
+  background: var(--ink-soft);
+  text-align: center;
 }
-.facts div:not(:first-child) { padding-left: 26px; }
-.facts div:last-child { border-right: 0; }
+.facts div::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: var(--acid);
+  content: '';
+  transform: translateX(-50%);
+}
 .facts strong {
+  color: var(--pearl);
   font-family: var(--font-serif);
-  font-size: clamp(24px, 2vw, 34px);
+  font-size: clamp(30px, 2.6vw, 44px);
   font-weight: 400;
+  line-height: 1.05;
 }
-.facts span { margin-top: 8px; color: var(--fog); font-size: 15px; }
+.facts span {
+  max-width: 210px;
+  margin-top: 14px;
+  color: var(--fog);
+  font-size: 16px;
+  line-height: 1.45;
+}
 
 .services-section {
   padding: clamp(90px, 10vw, 150px) 7vw;
@@ -535,8 +560,8 @@ a:focus-visible, button:focus-visible {
 .gift-section {
   position: relative;
   display: grid;
-  grid-template-columns: 0.15fr 1.2fr 0.65fr;
-  gap: 4vw;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.65fr);
+  gap: 8vw;
   align-items: center;
   overflow: hidden;
   min-height: 600px;
@@ -551,12 +576,6 @@ a:focus-visible, button:focus-visible {
   border: 1px solid rgba(207, 255, 69, 0.27);
   border-radius: 50%;
   content: '';
-}
-.gift-mark {
-  font-family: var(--font-serif);
-  font-size: clamp(80px, 10vw, 180px);
-  font-style: italic;
-  color: var(--acid);
 }
 .gift-section h2 { font-size: clamp(50px, 6.3vw, 104px); }
 .gift-copy { position: relative; z-index: 1; }
@@ -613,7 +632,7 @@ a:focus-visible, button:focus-visible {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: center;
   padding: 48px 7vw;
@@ -642,8 +661,8 @@ footer {
   .statement-copy, .section-head > p { max-width: 620px; }
   .service-row { grid-template-columns: 1fr 0.7fr 58px; }
   .ritual-copy { padding: 8vw; }
-  .gift-section { grid-template-columns: 0.12fr 1fr; }
-  .gift-copy { grid-column: 2; max-width: 580px; }
+  .gift-section { grid-template-columns: 1fr; gap: 40px; }
+  .gift-copy { grid-column: 1; max-width: 580px; }
 }
 
 @media (max-width: 760px) {
@@ -666,9 +685,8 @@ footer {
   .statement, .services-section, .offers-section, .contacts-section { padding-right: 20px; padding-left: 20px; }
   .statement h2, .section-head h2 { font-size: clamp(50px, 15vw, 76px); }
   .facts { grid-template-columns: 1fr 1fr; }
-  .facts div:nth-child(2) { border-right: 0; }
-  .facts div:nth-child(3), .facts div:nth-child(4) { border-top: 1px solid var(--line-dark); }
-  .facts div:nth-child(3) { padding-left: 0; }
+  .facts div { min-height: 160px; padding: 26px 14px; }
+  .facts strong { font-size: clamp(28px, 8vw, 38px); }
   .service-row { grid-template-columns: 1fr 50px; gap: 15px; min-height: 175px; }
   .service-title h3 { font-size: 48px; }
   .service-row > p { grid-column: 1 / -1; }
@@ -683,7 +701,6 @@ footer {
   .offer-card { min-height: 500px; }
   .offer-icon { top: 30px; right: 30px; }
   .gift-section { grid-template-columns: 1fr; padding: 80px 20px; }
-  .gift-mark { position: absolute; top: 20px; right: 24px; opacity: 0.18; }
   .gift-copy { grid-column: 1; }
   .contacts-section { grid-template-columns: 1fr; }
   .contact-copy h2 { font-size: 80px; }

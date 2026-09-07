@@ -244,7 +244,6 @@ export default function Home() {
       </section>
 
       <section className="gift-section">
-        <div className="gift-mark" aria-hidden="true">P</div>
         <div>
           <p className="section-kicker light">Подарочный сертификат</p>
           <h2>Подарите не вещь.<br /><em>Подарите состояние.</em></h2>
@@ -296,7 +295,6 @@ export default function Home() {
           <span className="logo-mark">P</span>
           <span className="logo-text"><strong>POLLO</strong><small>SPA LOUNGE</small></span>
         </a>
-        <p>ООО «Р.О.С.-Ко» · ИНН 5018143520 · ОГРН 1105018001747</p>
         <div className="footer-links">
           <a href="http://pollospalounge.ru/politika-konfidencialnosti" target="_blank" rel="noreferrer">Политика конфиденциальности</a>
           <span>© 2026</span>
