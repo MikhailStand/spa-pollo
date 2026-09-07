@@ -43,6 +43,11 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /spa-pollo
 
+      - name: Prepare GitHub Pages bundle
+        run: |
+          cp -R dist/client/spa-pollo/_next dist/client/_next
+          touch dist/client/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
