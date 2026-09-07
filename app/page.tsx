@@ -125,10 +125,6 @@ export default function Home() {
           <figure className="hero-image-small">
             <img src="images/spa-bath.jpg" alt="Гидромассажная ванна в Полло Спа" />
           </figure>
-          <div className="experience-seal">
-            <strong>30</strong>
-            <span>лет опыта<br />и заботы</span>
-          </div>
         </div>
 
         <a className="scroll-cue" href="#about">
@@ -149,6 +145,12 @@ export default function Home() {
               Мы соединяем SPA-ритуалы, косметологию и классические
               бьюти-услуги в одном спокойном пространстве. Здесь не торопят —
               здесь слышат вас и подбирают уход по состоянию, а не по шаблону.
+            </p>
+            <p>
+              Уже 30 лет Полло Спа остаётся местом, куда возвращаются за
+              бережным отношением и качественным уходом. Накопленный опыт
+              помогает сочетать проверенные методики с современными
+              процедурами — спокойно, деликатно и с вниманием к деталям.
             </p>
             <a href="#services" className="text-link">
               Выбрать направление <ArrowDownRight size={17} aria-hidden="true" />

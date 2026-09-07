@@ -267,35 +267,6 @@ a:focus-visible, button:focus-visible {
 }
 .hero-image-small img { height: 100%; object-fit: cover; }
 
-.experience-seal {
-  position: absolute;
-  top: 12%;
-  left: -5%;
-  display: grid;
-  width: 136px;
-  height: 136px;
-  place-content: center;
-  border-radius: 50%;
-  background: var(--acid);
-  color: var(--ink);
-  text-align: center;
-  transform: rotate(-8deg);
-}
-.experience-seal strong {
-  font-family: var(--font-serif);
-  font-size: 46px;
-  font-weight: 400;
-  line-height: 0.82;
-}
-.experience-seal span {
-  margin-top: 8px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
 .scroll-cue {
   position: absolute;
   bottom: 27px;
@@ -328,6 +299,7 @@ a:focus-visible, button:focus-visible {
   font-size: 18px;
   line-height: 1.75;
 }
+.statement-copy p + p { margin-top: 22px; }
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -662,7 +634,6 @@ footer {
   .main-nav { display: none; }
   .hero { grid-template-columns: 1fr 0.82fr; }
   .hero-copy { padding-left: 0; }
-  .experience-seal { width: 112px; height: 112px; }
   .statement-grid, .section-head { grid-template-columns: 1fr; gap: 38px; }
   .statement-copy, .section-head > p { max-width: 620px; }
   .service-row { grid-template-columns: 1fr 0.7fr 58px; }
@@ -685,7 +656,6 @@ footer {
   .hero-meta { flex-direction: column; }
   .hero-visual { min-height: 560px; margin-top: 60px; }
   .hero-image-wrap { inset: 0; }
-  .experience-seal { top: -35px; left: -5px; }
   .hero-image-small { right: -10px; width: 135px; }
   .scroll-cue { display: none; }
   .statement, .services-section, .offers-section, .contacts-section { padding-right: 20px; padding-left: 20px; }
