@@ -80,7 +80,7 @@ export default function Home() {
         <nav className="main-nav" aria-label="Основная навигация">
           <a href="#about">О нас</a>
           <a href="#services">Услуги</a>
-          <a href="#offers">Спецпредложения</a>
+          <a href="#offers">Акции</a>
           <a href="#contacts">Контакты</a>
         </nav>
 
@@ -229,7 +229,7 @@ export default function Home() {
       <section className="offers-section" id="offers">
         <div className="section-head dark-text">
           <div>
-            <p className="section-kicker">Специальные предложения</p>
+            <p className="section-kicker">Акции</p>
             <h2>Пауза, которая<br />меняет день</h2>
           </div>
           <p>Готовые сочетания процедур для быстрого и глубокого восстановления.</p>

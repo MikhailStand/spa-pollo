@@ -42,7 +42,7 @@ export function MobileMenu({ bookingUrl }: { bookingUrl: string }) {
           <nav aria-label="Мобильная навигация">
             <a href="#about" onClick={close}>О нас</a>
             <a href="#services" onClick={close}>Услуги</a>
-            <a href="#offers" onClick={close}>Спецпредложения</a>
+            <a href="#offers" onClick={close}>Акции</a>
             <a href="#contacts" onClick={close}>Контакты</a>
           </nav>
           <a
