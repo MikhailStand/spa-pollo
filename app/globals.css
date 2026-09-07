@@ -479,6 +479,12 @@ a:focus-visible, button:focus-visible {
   padding: clamp(70px, 8vw, 140px);
 }
 .ritual-copy h2 { font-size: clamp(48px, 5.4vw, 92px); }
+.vitamin-line { white-space: nowrap; }
+.vitamin-line em {
+  color: var(--acid);
+  font-weight: 400;
+  font-style: italic;
+}
 .ritual-copy > p { max-width: 650px; margin-top: 34px; }
 .ritual-details {
   display: grid;

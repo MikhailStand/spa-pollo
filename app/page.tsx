@@ -204,7 +204,10 @@ export default function Home() {
         </div>
         <div className="ritual-copy">
           <p className="section-kicker">Сезонный ритуал</p>
-          <h2>Чёрная смородина<br />с витамином C</h2>
+          <h2>
+            Чёрная смородина<br />
+            <span className="vitamin-line">с витамином <em>C</em></span>
+          </h2>
           <p>
             Ароматерапевтический SPA-уход для уставшей кожи: сахарный скраб
             с миндальным маслом, обёртывание и распаривание в гидромассажной
