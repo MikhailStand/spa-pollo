@@ -118,12 +118,12 @@ export default function Home() {
           <figure className="hero-image-wrap">
             <img
               className="hero-image"
-              src="/images/treatment-room.jpg"
+              src="images/treatment-room.jpg"
               alt="Светлый кабинет ухода в Полло Спа"
             />
           </figure>
           <figure className="hero-image-small">
-            <img src="/images/spa-bath.jpg" alt="Гидромассажная ванна в Полло Спа" />
+            <img src="images/spa-bath.jpg" alt="Гидромассажная ванна в Полло Спа" />
           </figure>
           <div className="experience-seal">
             <strong>30</strong>
@@ -199,7 +199,7 @@ export default function Home() {
 
       <section className="ritual-section">
         <div className="ritual-image">
-          <img src="/images/beauty-room.jpg" alt="Цветы в светлом интерьере Полло Спа" />
+          <img src="images/beauty-room.jpg" alt="Цветы в светлом интерьере Полло Спа" />
           <span className="image-caption">Полло Спа · Королёв</span>
         </div>
         <div className="ritual-copy">
