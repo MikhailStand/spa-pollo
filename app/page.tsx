@@ -105,15 +105,14 @@ export default function Home() {
             восстановления и красоты с 30-летней историей.
           </p>
           <div className="hero-actions">
-            <BookingLink />
+            <a className="button button-services" href="#services">
+              Услуги
+            </a>
             <a className="button button-ghost" href="tel:+74955000606">
               <Phone aria-hidden="true" size={17} strokeWidth={1.8} />
               Позвонить
             </a>
-            <a className="button button-services" href="#services">
-              Услуги
-              <ArrowDownRight aria-hidden="true" size={18} strokeWidth={1.8} />
-            </a>
+            <BookingLink />
           </div>
           <div className="hero-meta">
             <p><MapPin aria-hidden="true" size={17} />Королёв, проспект Космонавтов, 4В</p>
