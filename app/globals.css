@@ -208,6 +208,17 @@ a:focus-visible, button:focus-visible {
   gap: 14px;
   margin-top: 38px;
 }
+.hero-actions {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.hero-actions .button {
+  min-height: 52px;
+  gap: 7px;
+  padding: 0 18px;
+  font-size: 14px;
+  white-space: nowrap;
+}
 
 .button {
   display: inline-flex;
@@ -697,8 +708,16 @@ footer {
   .hero-copy { padding: 0; }
   .hero h1 { font-size: clamp(52px, 15vw, 78px); }
   .hero-lead { margin-top: 26px; }
-  .hero-actions { flex-direction: column; }
-  .hero-actions .button { width: 100%; }
+  .hero-actions { flex-direction: row; justify-content: flex-start; gap: 6px; }
+  .hero-actions .button {
+    width: auto;
+    min-height: 46px;
+    gap: 0;
+    padding: 0 10px;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .hero-actions .button svg { display: none; }
   .hero-meta { flex-direction: column; }
   .hero-visual { min-height: 560px; margin-top: 60px; }
   .hero-image-wrap { inset: 0; }
