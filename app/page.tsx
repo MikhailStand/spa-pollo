@@ -108,7 +108,11 @@ export default function Home() {
             <BookingLink />
             <a className="button button-ghost" href="tel:+74955000606">
               <Phone aria-hidden="true" size={17} strokeWidth={1.8} />
-              +7 495 500 06 06
+              Позвонить
+            </a>
+            <a className="button button-services" href="#services">
+              Услуги
+              <ArrowDownRight aria-hidden="true" size={18} strokeWidth={1.8} />
             </a>
           </div>
           <div className="hero-meta">

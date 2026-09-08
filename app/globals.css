@@ -228,6 +228,14 @@ a:focus-visible, button:focus-visible {
 .button-primary:hover { background: #ddff78; }
 .button-ghost { border-color: var(--line-dark); color: var(--pearl); }
 .button-ghost:hover { border-color: rgba(243, 242, 234, 0.5); }
+.button-services {
+  border-color: rgba(207, 255, 69, 0.55);
+  color: var(--acid);
+}
+.button-services:hover {
+  border-color: var(--acid);
+  background: rgba(207, 255, 69, 0.08);
+}
 
 .hero-meta {
   display: flex;
